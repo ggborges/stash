@@ -9,15 +9,15 @@ class Graph:
     def __init__(self):
 
         self.list_of_nodes = []
-        # Tabelas a serem consultadas
 
+        # Tabelas a serem consultadas
             # Tabela referente à função heurística h(n)
-        self.distancias_entre_nodes = pd.read_excel(
-            r"D:\Users\gugab\Documents\Ciencias da Computação\Sistemas Inteligentes\Distancia_em_linha_reta.xlsx")
+        # pathReta = ".\src\Distancia_em_linha_reta.xlsx"
+        self.distancias_entre_nodes = pd.read_excel(".\src\Distancia_em_linha_reta.xlsx")
 
             # Tabela referente a função de caminho g(n)
-        self.distancias_reais = pd.read_excel(
-            r"D:\Users\gugab\Documents\Ciencias da Computação\Sistemas Inteligentes\Distancia_real.xlsx")
+        # pathReal = ".\src\Distancia_real.xlsx"
+        self.distancias_reais = pd.read_excel(".\src\Distancia_real.xlsx")
 
     """def import_table_dist_h(self, path):
         self.distancias_entre_nodes = pd.read_excel(path)
